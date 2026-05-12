@@ -1,0 +1,104 @@
+/* Basic CSS for the navigation bar */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: #8a928a81;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  nav ul {
+    list-style-type: none;
+    /* padding: 0; */
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Basic CSS for the form elements */
+  body {
+    font-family: Arial, sans-serif;
+    /* margin: 20px; */
+  }
+  
+  h1 {
+    margin-bottom: 5px;
+  }
+  
+  div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 100px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 200px;
+    padding: 5px;
+  }
+  
+  button {
+    padding: 7px 15px;
+    background-color: seagreen;
+    color: white;
+    border: 2px solid;
+    cursor: pointer;
+  }
+
+  button {
+    border-radius: 5px; /* Subtle corners */
+  }
+  button.pill {
+    border-radius: 20px; /* Fully rounded sides */
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Basic CSS for the report section */
+  h2 {
+    margin-top: 30px;
+  }
+  
+  #report,#result {
+    padding: 10px;
+    max-width: 400px;
+    word-wrap: break-word;
+  }
+#result{
+  height: 400px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+  #result img{
+    width: 200px;
+    height: 100px;
+  }
+  
