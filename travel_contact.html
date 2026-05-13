@@ -9,9 +9,65 @@
             text-align: center
         }
 
+        #contactForm {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        #contactForm input,
+        #contactForm textarea {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 8px;
+        }
+        #contactForm button {
+            border-radius: 25px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #contactForm button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
+    <nav class="navbar">
+        <// Logo Section>
+    <a href="/" class="logo">
+        <img src="logo.png" alt="Company Logo">
+    </a>
+        <h1 style="color: white;">TravelBloom</h1>
 
+    <ul>
+  <li><a href="./travel_recommendation.html" id="home">Home </a></li>    
+  <li><a href="./travel_about.html" id="about">About Us </a></li>
+  <li><a href="./travel_contact.html" id="contact">Contact Us </a></li>
+  <li><input type="text" id="destinations" placeholder="Enter a destination"> </li>
+  <li><button id='btnSearch'>Search</button>
+  </li>
+
+</ul>
+</nav>
+<h1>Contact Us</h1>
+<p>Feel  free to contact us with your questions about travel.</p>
+
+<form id="contactForm">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+    <button type="submit" onclick="thankyou()">Submit</button>
+</form>
+<script src="./travel_recommendation.js"></script>
 </body>
 </html>
