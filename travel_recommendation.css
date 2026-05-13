@@ -91,10 +91,13 @@ nav {
   
 /* General style for all social media icons */
 .fa {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
     padding: 20px;
     font-size: 30px;
     width: 50px;
-    text-align: left;
+    text-align: center;
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 50%;
@@ -109,8 +112,8 @@ nav {
     color: white;
 }
 
-.fa-twitter {
-    background: #55ACEE;
+.fa-x {
+    background: black;
     color: white;
 }
 
@@ -122,3 +125,4 @@ nav {
     background: red;
     color: white;   
 }
+
