@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Basic CSS for background image */
 
 body {
@@ -6,22 +12,35 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-text-stroke: 0.5px black;
+    color: yellowgreen;
 }
 
 /* Basic CSS for the navigation bar */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 nav {
     background-color: #8a928a81;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
   }
   
   .navbar {
@@ -30,7 +49,7 @@ nav {
 
   nav ul {
     list-style-type: none;
-    /* padding: 0; */
+    padding: 0;
   }
   
   nav ul li {
@@ -45,13 +64,9 @@ nav {
   }
   
   /* Basic CSS for the form elements */
-  body {
-    font-family: Arial, sans-serif;
-    /* margin: 20px; */
-  }
   
   h1 {
-    margin-bottom: 5px;
+    margin-bottom: 1.5em;
   }
   
   div {
@@ -76,11 +91,9 @@ nav {
     color: white;
     border: 2px solid;
     cursor: pointer;
-  }
-
-  button {
     border-radius: 5px; /* Subtle corners */
-  }
+}
+
   button.pill {
     border-radius: 20px; /* Fully rounded sides */
   }
@@ -94,13 +107,21 @@ nav {
     display: flex;
     gap: 15px;
     justify-content: center;
+    align-items: center;
     padding: 20px;
-    font-size: 30px;
+    font-size: 20px;
     width: 50px;
-    text-align: center;
+    height: 50px;
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 25%;
+    transition: opacity 0.3s;
+    flex-direction: column;
+    position: flex;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 9999;
 }
 
 .fa:hover {
