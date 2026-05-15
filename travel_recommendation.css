@@ -27,10 +27,10 @@ body {
 main {
     flex: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    -webkit-text-stroke: 0.5px black;
-    color: yellowgreen;
+    color: black;
 }
 
 /* Basic CSS for the navigation bar */
@@ -66,7 +66,13 @@ nav {
   /* Basic CSS for the form elements */
   
   h1 {
-    margin-bottom: 1.5em;
+    display: block;
+    margin-bottom: 0;
+  }
+
+  p {
+    clear: both;
+    margin-top: 5px;
   }
   
   div {
@@ -122,6 +128,7 @@ nav {
     left: 0;
     transform: translateY(-50%);
     z-index: 9999;
+    transition: opacity 0.3s;
 }
 
 .fa:hover {
