@@ -33,6 +33,22 @@ main {
     color: black;
 }
 
+.btn-primary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 15px;
+    font-weight: 400;
+    font-size: 16px;
+    user-select: none;
+    background-color: seagreen;
+    color: white;
+    transition: background-color 0.3s ease;
+    border: 2px solid;
+    cursor: pointer;
+    border-radius: 5px; /* Subtle corners */
+}
+
 /* Basic CSS for the navigation bar */
 
 nav {
