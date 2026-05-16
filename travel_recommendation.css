@@ -23,27 +23,32 @@ main {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     color: black;
+    padding-top: 40px;
 }
 
-.btn-primary {
+button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 7px 15px;
-    font-weight: 400;
+    padding: 10px 20px;
+    font-weight: 600;
     font-size: 16px;
     user-select: none;
     background-color: seagreen;
     color: white;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
     border: 2px solid;
     cursor: pointer;
-    border-radius: 5px; /* Subtle corners */
+    border-radius: 25px; /* Subtle corners */
 }
 
+button:hover {
+    background-color: #2e8b57;
+    transform: scale(1.05);
+  }
 
 /* Basic CSS for the navigation bar */
 
@@ -79,7 +84,6 @@ nav {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   }
 
-  
   .form-group {
     margin-bottom: 10px;
   }
@@ -101,15 +105,6 @@ nav {
     padding: 5px;
   }
 
-  button.pill {
-    border-radius: 20px; /* Fully rounded sides */
-  }
-  
-  button:hover {
-    background-color: #2e8b57;
-    transform: scale(1.05);
-  }
-  
 /* General style for all social media icons */
 .social-sidebar {
     display: flex;
@@ -118,8 +113,6 @@ nav {
     align-items: center;
     padding: 20px;
     font-size: 20px;
-    width: 50px;
-    height: 50px;
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 25%;
