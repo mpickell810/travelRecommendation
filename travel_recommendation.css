@@ -16,6 +16,7 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
+    text-align: center
 }
 
 .hero {
@@ -35,8 +36,8 @@ body {
 .container::before {
     content: "";
     position: absolute;
-    insert: 0;
-    background: rgba(0, 0, 0, 0.4)
+    insert: top;
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
@@ -178,10 +179,6 @@ nav {
 .social-sidebar-youtube {
     background: red;
     color: white;   
-}
-
-body {
-    text-align: center
 }
 
 #contactForm {
