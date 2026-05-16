@@ -16,7 +16,7 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    text-align: center
+    text-align: center;
 }
 
 main {
@@ -44,6 +44,7 @@ main {
     border-radius: 5px; /* Subtle corners */
 }
 
+
 /* Basic CSS for the navigation bar */
 
 nav {
@@ -54,10 +55,6 @@ nav {
     justify-content: space-between;
   }
   
-  .navbar {
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-
   nav ul {
     list-style-type: none;
     padding: 0;
@@ -82,13 +79,14 @@ nav {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   }
 
-  p {
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  .content-p {
     clear: both;
     margin-top: 5px;
-  }
-  
-  div {
-    margin-bottom: 10px;
   }
   
   label {
