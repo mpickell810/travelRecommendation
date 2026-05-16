@@ -18,10 +18,26 @@ body {
     flex-direction: column;
 }
 
+.hero {
+    background-image: 
+      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+      url('darling_harbor.jpg');
+  }
+  
+
 .container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    position: relative;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    insert: 0;
+    background: rgba(0, 0, 0, 0.4)
+    z-index: 1;
 }
 
 main {
@@ -52,7 +68,7 @@ main {
 /* Basic CSS for the navigation bar */
 
 nav {
-    background-color: #8a928a81;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     display: flex;
     align-items: center;
@@ -84,6 +100,7 @@ nav {
   h1 {
     display: block;
     margin-bottom: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   }
 
   p {
@@ -106,26 +123,18 @@ nav {
     width: 200px;
     padding: 5px;
   }
-  
-  button {
-    padding: 7px 15px;
-    background-color: seagreen;
-    color: white;
-    border: 2px solid;
-    cursor: pointer;
-    border-radius: 5px; /* Subtle corners */
-}
 
   button.pill {
     border-radius: 20px; /* Fully rounded sides */
   }
   
   button:hover {
-    background-color: seagreen;
+    background-color: #2e8b57;
+    transform: scale(1.05);
   }
   
 /* General style for all social media icons */
-.fa {
+.social-sidebar {
     display: flex;
     gap: 15px;
     justify-content: center;
@@ -139,7 +148,7 @@ nav {
     border-radius: 25%;
     transition: opacity 0.3s;
     flex-direction: column;
-    position: flex;
+    position: absolute;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
@@ -147,26 +156,52 @@ nav {
     transition: opacity 0.3s;
 }
 
-.fa:hover {
+.social-sidebar:hover {
     opacity: 0.7;
 }
 
-.fa-facebook {
+.social-sidebar-facebook {
     background: #3B5998;
     color: white;
 }
 
-.fa-x {
+.social-sidebar-x {
     background: black;
     color: white;
 }
 
-.fa-instagram {
+.social-sidebar-instagram {
     background: #125688;
     color: white;
 }
-.fa-youtube {
+
+.social-sidebar-youtube {
     background: red;
     color: white;   
 }
 
+body {
+    text-align: center
+}
+
+#contactForm {
+    max-width: 400px;
+    margin: 0 auto;
+}
+        #contactForm input,
+        #contactForm textarea {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 8px;
+}
+        #contactForm button {
+            border-radius: 25px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+}
+        #contactForm button:hover {
+            background-color: #0056b3;
+}
