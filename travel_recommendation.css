@@ -19,13 +19,6 @@ body {
     text-align: center
 }
 
-.hero {
-    background-image: 
-      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-      url('darling_harbor.jpg');
-  }
-  
-
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -36,7 +29,7 @@ body {
 .container::before {
     content: "";
     position: absolute;
-    insert: top;
+    inset: 0;
     background: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
