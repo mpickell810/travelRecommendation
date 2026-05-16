@@ -167,6 +167,16 @@ nav {
 #contactForm {
     max-width: 400px;
     margin: 0 auto;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000,
+        -2px 0 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        0 2px 0 #000;
 }
         #contactForm input,
         #contactForm textarea {
@@ -177,11 +187,13 @@ nav {
         #contactForm button {
             border-radius: 25px;
             padding: 10px 20px;
-            background-color: #007bff;
+            background-color: seagreen;
             color: white;
             border: none;
             cursor: pointer;
+            border-radius: 25px;
 }
         #contactForm button:hover {
-            background-color: #0056b3;
+            background-color: #2e8b57;
+            transform: scale(1.05);
 }
