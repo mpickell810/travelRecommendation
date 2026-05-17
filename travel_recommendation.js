@@ -7,7 +7,7 @@ xhr.responseType = 'json';
 // Parse JSON
 
 function loadDestinationData() {
-    fetch(travel_recommendation_api.json)
+    fetch('.travel_recommendation_api.json')
       .then(response => response.json())
       .then(data => {
         travelData = data;
@@ -32,7 +32,7 @@ countries.forEach(country => {
         searchResults.push(country);
     }
 country.cities.forEach(city => {
-  if (city.name.toLowerCase().includes(searchTerm)) ||
+  if ((city.name.toLowerCase().includes(searchTerm)) ||
       city.description.toLowerCase().includes(searchTerm)) {
     searchResults.push(city);
   }
@@ -42,12 +42,12 @@ country.cities.forEach(city => {
 // Search in Temples
 
 temples.forEach(temple => {
-    if (temple.name.toLowerCase().includes(searchTerm)) ||
+    if (temple.name.toLowerCase().includes(searchTerm))) ||
         temple.description.toLowerCase().includes(searchTerm) {
         searchResults.push(temple);
         }
     }
-});
+};
 
 //  Search in Beaches
 beaches.forEach(beach => {
@@ -74,4 +74,5 @@ function displayResults(searchResults) {
         `;
     });
 document.getElementById('main-content').innerHTML = resultsHTML;
+document.getElementById('btnSearch').addEventListener('click', searchDestination);
 }
