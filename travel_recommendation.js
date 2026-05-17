@@ -1,13 +1,7 @@
-var xhr = new XMLHttpRequest();
-var url = './travel_recommendation_api.json';
-
-xhr.open('GET', url, true);
-xhr.responseType = 'json';
-
 // Parse JSON
 
 function loadDestinationData() {
-    fetch('.travel_recommendation_api.json')
+    fetch('./travel_recommendation_api.json')
       .then(response => response.json())
       .then(data => {
         travelData = data;
@@ -31,35 +25,34 @@ countries.forEach(country => {
     if (country.name.toLowerCase().includes(searchTerm)) {
         searchResults.push(country);
     }
-country.cities.forEach(city => {
-  if ((city.name.toLowerCase().includes(searchTerm)) ||
-      city.description.toLowerCase().includes(searchTerm)) {
-    searchResults.push(city);
-  }
- });
+    country.cities.forEach(city => {
+      if ((city.name.toLowerCase().includes(searchTerm)) ||
+          city.description.toLowerCase().includes(searchTerm)) {
+        searchResults.push(city);
+      }
+    });
 });
 
 // Search in Temples
 
 temples.forEach(temple => {
-    if (temple.name.toLowerCase().includes(searchTerm))) ||
-        temple.description.toLowerCase().includes(searchTerm) {
+    if ((temple.name.toLowerCase().includes(searchTerm))) ||
+        temple.description.toLowerCase().includes(searchTerm)) {
         searchResults.push(temple);
         }
     }
-};
+});
 
 //  Search in Beaches
 beaches.forEach(beach => {
     if (beach.name.toLowerCase().includes(searchTerm)) ||
         beach.description.toLowerCase().includes(searchTerm)) {
         searchResults.push(beach);
-        }
+    }
 });
 
 displayResults(searchResults);
 }
-
 //  Display Results
 function displayResults(searchResults) {
     let resultsHTML = '';
@@ -74,5 +67,6 @@ function displayResults(searchResults) {
         `;
     });
 document.getElementById('main-content').innerHTML = resultsHTML;
-document.getElementById('btnSearch').addEventListener('click', searchDestination);
 }
+
+document.getElementById('btnSearch').addEventListener('click', searchDestination);
