@@ -36,16 +36,15 @@ countries.forEach(country => {
 // Search in Temples
 
 temples.forEach(temple => {
-    if ((temple.name.toLowerCase().includes(searchTerm))) ||
+    if ((temple.name.toLowerCase().includes(searchTerm)) ||
         temple.description.toLowerCase().includes(searchTerm)) {
         searchResults.push(temple);
-        }
     }
 });
 
 //  Search in Beaches
 beaches.forEach(beach => {
-    if (beach.name.toLowerCase().includes(searchTerm)) ||
+    if ((beach.name.toLowerCase().includes(searchTerm)) ||
         beach.description.toLowerCase().includes(searchTerm)) {
         searchResults.push(beach);
     }
