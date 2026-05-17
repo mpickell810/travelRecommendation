@@ -86,7 +86,7 @@ function displayResults(searchResults) {
         mainContent.innerHTML = '<p>No results found.</p>';
         return;
     }
-
+    
     const fragment = document.createDocumentFragment();
 
     searchResults.forEach(result => {
@@ -105,6 +105,12 @@ function displayResults(searchResults) {
     mainContent.appendChild(fragment);
 }
 
+function clearSearch() {
+    document.getElementById('destinations').value = '';
+    document.getElementById('main-content').innerHTML = '';
+    searchCache.clear();
+}
+
 function debounce(func, delay) {
     let timeoutId;
     return function(...args) {
@@ -119,6 +125,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchBtn = document.getElementById('btnSearch');
     if (searchBtn) {
         searchBtn.addEventListener('click', searchDestination);
+    }
+
+    const clearBtn = document.getElementById('btnClear');
+    if (clearBtn) {
+        clearBtn.addEventListener('click', clearSearch);
     }
 
     const destInput = document.getElementById('destinations');
