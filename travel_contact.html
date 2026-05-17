@@ -26,22 +26,6 @@
 <main>
 <h1>Contact Us</h1>
 <p>Feel  free to contact us with your questions about travel.</p>
-
-<form id="contactForm">
-    <div>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-    </div>
-    <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-    <div>
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-    </div>
-    <button type="submit" onclick="thankyou()">Submit</button>
-</form>
 </main>
 
 <div class="social-sidebar">
@@ -59,6 +43,25 @@
     </a>
 </div>
   
-<script src="./travel_recommendation.js"></script>
+<form id="contactForm">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+    <button type="submit" onclick="thankyou()">Submit</button>
+</form>
+<script>
+    function thankyou() {
+        alert('Thank you for contacting us!')
+    }
+</script>
 </body>
 </html>
