@@ -93,7 +93,7 @@ function displayResults(searchResults) {
         const card = document.createElement('div');
         card.className = 'destination-card';
         card.innerHTML = `
-            <img src="${result.imageURL}" alt="${result.name}" loading="lazy">
+            <img src="${result.imageUrl}" alt="${result.name}" loading="lazy">
             <h3>${result.name}</h3>
             <p>${result.description}</p>
         </div>
