@@ -7,7 +7,7 @@
           {
             "name": "Sydney, Australia",
             "imageUrl": "https://raw.githubusercontent.com/mpickell810/travelRecommendation/master/images/sydney.jpg",
-            "description": "A vibrant city known for its iconic landmarks like the Sydney Opera House and Sydney Harbour Bridge."
+            "description": "A vibrant city known for its iconic landmarks like the Sydney Opera House and Sydney Harbour Bridge. The most popular attractions in the country of Australia!"
           },
           {
             "name": "Melbourne, Australia",
@@ -39,7 +39,7 @@
           {
             "name": "Rio de Janeiro, Brazil",
             "imageUrl": "https://raw.githubusercontent.com/mpickell810/travelRecommendation/master/images/rio.jpg",
-            "description": "A lively city known for its stunning beaches, vibrant carnival celebrations, and iconic landmarks."
+            "description": "A lively city known for its stunning beaches, vibrant carnival celebrations, and iconic landmarks. The most famous city in the country of Brazil!"
           },
           {
             "name": "São Paulo, Brazil",
@@ -54,7 +54,7 @@
         "id": 1,
         "name": "Angkor Wat, Cambodia",
         "imageUrl": "https://raw.githubusercontent.com/mpickell810/travelRecommendation/master/images/angkor.jpg",
-        "description": "A UNESCO World Heritage site and the largest religious monument in the world. A beautiful Hindu temple"
+        "description": "A UNESCO World Heritage site and the largest religious monument in the world. A beautiful Hindu temple."
       },
       {
         "id": 2,
