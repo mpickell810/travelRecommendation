@@ -54,13 +54,13 @@
         "id": 1,
         "name": "Angkor Wat, Cambodia",
         "imageUrl": "https://raw.githubusercontent.com/mpickell810/travelRecommendation/master/images/angkor.jpg",
-        "description": "A UNESCO World Heritage site and the largest religious monument in the world."
+        "description": "A UNESCO World Heritage site and the largest religious monument in the world. A beautiful Hindu temple"
       },
       {
         "id": 2,
         "name": "Taj Mahal, India",
         "imageUrl": "https://raw.githubusercontent.com/mpickell810/travelRecommendation/master/images/taj.jpg",
-        "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
+        "description": "An iconic symbol of love and a masterpiece of Mughal architecture, which is also thought of as a temple."
       }
     ],
     "beaches": [
